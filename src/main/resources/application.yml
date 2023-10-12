@@ -1,0 +1,91 @@
+server:
+  port: 8015
+spring:
+  application:
+    name: tosb
+  profiles:
+    active: local
+#  main:
+#    allow-bean-definition-overriding: true
+#  jackson:
+#    date-format: yyyy-MM-dd HH:mm:ss
+#    time-zone: GMT+8
+#  servlet:
+#    multipart:
+#      max-file-size: 5MB
+#      max-request-size: 100MB
+#
+#dubbo:
+#  application:
+#    name: ${spring.application.name}
+#  protocol:
+#    name: dubbo
+#    port: -1
+#  registry:
+#    address: nacos://${spring.cloud.nacos.discovery.server-addr}
+#  consumer:
+#    check: false
+#    version: 1.0.0
+#    timeout: 3000
+#
+#  provider:
+#    loadbalance: roundrobin
+#    version: 1.0.0
+#
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: 'prometheus'
+#  metrics:
+#    tags:
+#      application: ${spring.application.name}
+#
+##apollo公共配置
+#app.id: wlhyos-${spring.application.name}
+#apollo.bootstrap.enabled: true # will inject 'application' namespace in bootstrap phase
+#apollo.bootstrap.eagerLoad.enabled: true #将Apollo配置加载提到初始化日志系统之前
+#apollo.bootstrap.namespaces: application,gaea,kafka,rocketmq,aliyunoss
+#
+#---
+#spring.profiles: local
+#
+#spring:
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 192.168.7.133:8848
+#
+#apollo.meta: http://192.168.7.133:8080
+#
+#---
+#spring.profiles: dev
+#
+#apollo.meta: http://service-apollo-config-server-dev.middleware:8080
+#
+#---
+#spring.profiles: dev1
+#
+#apollo.meta: http://service-apollo-config-server-dev1.middleware:8080
+#
+#---
+#spring.profiles: gray
+#
+#apollo.meta: http://service-apollo-config-server-gray.middleware.svc.cluster.local:8080
+#
+#---
+#spring.profiles: test
+#
+#apollo.meta: http://service-apollo-config-server-test.middleware:8080
+#
+#---
+#spring.profiles: pre
+#
+#apollo.meta: http://service-apollo-config-server-pre.middleware:8080
+#
+#
+#---
+#spring.profiles: prod
+#
+#apollo.meta: http://service-apollo-config-server-prod.middleware:8080
+
