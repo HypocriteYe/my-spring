@@ -26,6 +26,11 @@ public class MyController {
         return remoteHost;
     }
 
+    @GetMapping("/testRequest")
+    public String testReuqest(HttpServletRequest request) {
+        return request.toString();
+    }
+
     @GetMapping("/hello")
     public String count() {
         Long increment = redisTemplate.opsForValue().increment("docker-click-test");
