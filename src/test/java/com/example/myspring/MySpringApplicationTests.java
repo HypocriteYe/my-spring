@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.YamlPropertiesFactoryBean;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.data.redis.core.StringRedisTemplate;
+//import org.springframework.data.redis.core.StringRedisTemplate;
 
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -12,8 +12,8 @@ import java.util.concurrent.TimeUnit;
 @SpringBootTest
 class MySpringApplicationTests {
 
-    @Autowired
-    StringRedisTemplate stringRedisTemplate;
+//    @Autowired
+//    StringRedisTemplate stringRedisTemplate;
 
 //    @Autowired
 //    YamlPropertiesFactoryBean yamlPropertiesFactoryBean;
