@@ -5,6 +5,15 @@ spring:
     name: tosb
   profiles:
     active: local
+  datasource:
+    url: jdbc:mysql://localhost/school_manage?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false
+    username: root
+    password: root
+logging:
+  level:
+    com.example.myspring: DEBUG
+
+
 #  main:
 #    allow-bean-definition-overriding: true
 #  jackson:
